@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJWKJ45');</script>
+<!-- End Google Tag Manager --> 
+
+   <meta name="robots" content="noindex, nofollow"/>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>kalashnikov</title>
+  
+   <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="js/slider.js"></script> -->
+   
+   <!-- <script src="js/accordion.js"></script> -->
+  
+  
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJWKJ45"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+    
+
+
+
+
+
+
+
+<?php
+include('nav.php');
+?>
+
+
+
+
+<section class="services">
+
+
+
+<?php
+$id = '1yk94nHU8dCZnZ7VrkhFHAfzpywIS3MpE5K8SpAmSbwg';
+$gid = '1899800221';
+$range = 'B3:B10';
+$csv = file_get_contents('https://docs.google.com/spreadsheets/d/' . $id . '/export?format=csv&gid=' . $gid. '&range=' . $range);
+$csv = explode("\r\n", $csv);
+$array = array_map('str_getcsv', $csv);
+?>
+
+  
+ 
+ 
+ 
+    <h1 class="heading">Конвекторы с механическим управлением</h1>
+    <div class="box-container">
+ 
+       <div class="box">
+          <img src="img/reviews/var2.png" alt="">
+          <h3>Электрический конвектор KALASHNIKOV KVCH-E05M-11</h3>
+          <p>Площадь обогрева, м2 - 8</p>
+          <p>Макс. мощность, кВт - 0,5</p>
+          <p>Управление - Механическое</p>
+          <p>Источник тепла - Электрический</p>
+          <p>Степень защиты - IP24</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [0];
+echo $html [1];
+echo $html [2];
+echo $html [3];
+echo $html [4];
+echo $html [5];
+
+
+
+   ?>
+</span> BYN </p>
+    <p class="line__price">Цена - 130 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up16">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up16">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>             
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>           
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Получить консультацию</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close16">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+       <div class="box">
+         <img src="img/reviews/var2.png" alt="">
+         <h3>Электрический конвектор KALASHNIKOV KVCH-E10M-11</h3>
+         <p>Площадь обогрева, м2 - 15</p>
+         <p>Макс. мощность, кВт - 0,5/1</p>
+         <p>Управление - Механическое</p>
+         <p>Источник тепла - Электрический</p>
+         <p>Степень защиты - IP24</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [6];
+echo $html [7];
+echo $html [8];
+echo $html [9];
+echo $html [10];
+echo $html [11];
+
+
+
+   ?>
+</span> BYN</p>
+  <p class="line__price">Цена - 155 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up17">Оставить заказ</button>
+       </div>
+
+       <div class="pop_up" id="pop_up17">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>         
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>               
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close17">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+       <div class="box">
+         <img src="img/reviews/var2.png" alt="">
+          <h3>Электрический конвектор KALASHNIKOV KVCH-E15M-11</h3>
+          <p>Площадь обогрева, м2 - 20</p>
+          <p>Макс. мощность, кВт - 0,75/1.5</p>
+          <p>Управление - Механическое</p>
+          <p>Источник тепла - Электрический</p>
+          <p>Степень защиты - IP24</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [12];
+echo $html [13];
+echo $html [14];
+echo $html [15];
+echo $html [16];
+echo $html [17];
+
+
+
+   ?>
+</span> BYN</p>
+  <p class="line__price">Цена - 180 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up18">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up18">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>     
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                   
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close18">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+       <div class="box">
+         <img src="img/reviews/var2.png" alt="">
+         <h3>Электрический конвектор KALASHNIKOV KVCH-E20M-11</h3>
+         <p>Площадь обогрева, м2 - 25</p>
+         <p>Макс. мощность, кВт - 1/2</p>
+         <p>Управление - Механическое</p>
+         <p>Источник тепла - Электрический</p>
+         <p>Степень защиты - IP24</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [18];
+echo $html [19];
+echo $html [20];
+echo $html [21];
+echo $html [22];
+echo $html [23];
+
+
+
+   ?>
+</span> BYN</p>
+  <p class="line__price">Цена - 220 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up19">Оставить заказ</button>
+       </div>
+ 
+
+
+       <div class="pop_up" id="pop_up19">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>   
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                     
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close19">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+ 
+ 
+       
+ 
+      
+       
+    </div>
+ 
+ 
+    <h1 class="heading">Конвекторы с автоматическим управлением</h1>
+    <div class="box-container">
+ 
+       <div class="box">
+         <img src="img/reviews/var2.png" alt="">
+         <h3>Электрический конвектор KALASHNIKOV KVCH-E05E-11</h3>
+         <p>Площадь обогрева, м2 - 8</p>
+         <p>Макс. мощность, кВт - 0.5</p>
+         <p>Управление - Электронное</p>
+         <p>Источник тепла - Электрический</p>
+         <p>Степень защиты - IP24</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [24];
+echo $html [25];
+echo $html [26];
+echo $html [27];
+echo $html [28];
+echo $html [29];
+
+
+// print_r($array);
+   ?>
+</span> BYN</p>
+  <p class="line__price">Цена - 180 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up20">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up20">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>        
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close20">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+       <div class="box">
+         <img src="img/reviews/var2.png" alt="">
+          <h3>Электрический конвектор KALASHNIKOV KVCH-E10E-11</h3>
+          <p>Площадь обогрева, м2 - 15</p>
+          <p>Макс. мощность, кВт - 0,5/1</p>
+          <p>Управление - Электронное</p>
+          <p>Источник тепла - Электрический</p>
+          <p>Степень защиты - IP24</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [30];
+echo $html [31];
+echo $html [32];
+echo $html [33];
+echo $html [34];
+echo $html [35];
+
+
+// print_r($array);
+   ?>
+</span> BYN</p>
+  <p class="line__price">Цена - 190 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up21">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up21">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>    
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                    
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close21">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+       <div class="box">
+         <img src="img/reviews/var2.png" alt="">
+         <h3>Электрический конвектор KALASHNIKOV KVCH-E15E-11</h3>
+         <p>Площадь обогрева, м2 - 20</p>
+         <p>Макс. мощность, кВт - 0,75/1.5</p>
+         <p>Управление - Электронное</p>
+         <p>Источник тепла - Электрический</p>
+         <p>Степень защиты - IP24</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [36];
+echo $html [37];
+echo $html [38];
+echo $html [39];
+echo $html [40];
+echo $html [41];
+
+
+// print_r($array);
+   ?>
+</span> BYN</p>
+  <p class="line__price">Цена - 230 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up22">Оставить заказ</button>
+       </div>
+
+       <div class="pop_up" id="pop_up22">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>   
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                     
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close22">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+       <div class="box">
+         <img src="img/reviews/var2.png" alt="">
+         <h3>Электрический конвектор KALASHNIKOV KVCH-E20E-11</h3>
+         <p>Площадь обогрева, м2 - 25</p>
+         <p>Макс. мощность, кВт - 1/2</p>
+         <p>Управление - Электронное</p>
+         <p>Источник тепла - Электрический</p>
+         <p>Степень защиты - IP24</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [42];
+echo $html [43];
+echo $html [44];
+echo $html [45];
+echo $html [46];
+echo $html [47];
+
+
+
+   ?>
+</span> BYN</p>
+  <p class="line__price">Цена - 260 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up23">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up23">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <form class="telegram-form">
+                        <div class="pop__up__img">
+                            <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                        </div>     
+                        <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                   
+                        <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                        <button  type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close23">&#10006</div>
+            </div>
+        </div>
+       </div>
+ 
+ </section>
+
+
+ <?php
+ include('footer.php');
+ ?>
+
+
+
+
+
+
+ <!-- Подключение скриптов---------------- -->
+ <script src="lib/jquery.js"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="js/main.js"></script>
+ <script src="js/burger.js"></script>
+ <script src="js/pop__up__convecter.js"></script>
+
+
+</body>
+</html>
+
+

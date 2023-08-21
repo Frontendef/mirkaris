@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJWKJ45');</script>
+<!-- End Google Tag Manager --> 
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJWKJ45');</script>
+<!-- End Google Tag Manager --> 
+
+   <meta name="robots" content="noindex, nofollow"/>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>kalashnikov</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJWKJ45"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+<?php
+include('nav.php');
+?>
+
+
+
+<section class="services" id="services">
+
+
+<?php
+$id = '1yk94nHU8dCZnZ7VrkhFHAfzpywIS3MpE5K8SpAmSbwg';
+$gid = '1899800221';
+$range = 'B12:B26';
+$csv = file_get_contents('https://docs.google.com/spreadsheets/d/' . $id . '/export?format=csv&gid=' . $gid. '&range=' . $range);
+$csv = explode("\r\n", $csv);
+$array = array_map('str_getcsv', $csv);
+?>
+
+    <h1 class="heading"> ИК обогреватели с излучающей панелью</h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <img src="img/section/12.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E06P-11</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 0,6</p>
+          <p>Вес, кг - 2.6</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+
+echo $html [0];
+echo $html [1];
+echo $html [2];
+echo $html [3];
+echo $html [4];
+echo $html [5];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 130 BYN</p>
+          <!-- <a href="#services" class="btn">Заказать</a> -->
+          <button type="submit" class="btn" id="open_pop_up1">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up1">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>   
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                     
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close1">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+ 
+       <div class="box">
+          <img src="img/section/12.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E08P-11</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 0,8</p>
+          <p>Вес, кг - 3.2</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [6];
+echo $html [7];
+echo $html [8];
+echo $html [9];
+echo $html [10];
+echo $html [11];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 135 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up2">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up2">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div> 
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                       
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close2">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+       <div class="box">
+          <img src="img/section/12.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E10P-11</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 1,0</p>
+          <p>Вес, кг - 3.8</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [12];
+echo $html [13];
+echo $html [14];
+echo $html [15];
+echo $html [16];
+echo $html [17];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 155 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up3">Оставить заказ</button>
+       </div>
+
+       <div class="pop_up" id="pop_up3">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>   
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                     
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close3">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+       <div class="box">
+          <img src="img/section/12.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E20P-11</h3>
+          <p>Высота установки, м - 4,5</p>
+          <p>Макс. мощность, кВт - 0,6</p>
+          <p>Вес, кг - 7.4</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [18];
+echo $html [19];
+echo $html [20];
+echo $html [21];
+echo $html [22];
+echo $html [23];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 255 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up4">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up4">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>         
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>               
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close4">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+       <div class="box">
+          <img src="img/section/12.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E30P-11</h3>
+          <p>Высота установки, м - 15,0</p>
+          <p>Макс. мощность, кВт - 3,0</p>
+          <p>Вес, кг - 9.1</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [24];
+echo $html [25];
+echo $html [26];
+echo $html [27];
+echo $html [28];
+echo $html [29];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 350 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up5">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up5">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>  
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                      
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close5">&#10006</div>
+             </div>
+         </div>
+       </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="box">
+          <img src="img/section/12.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E40P-31</h3>
+          <p>Высота установки, м - 15,0</p>
+          <p>Макс. мощность, кВт - 4,0</p>
+          <p>Вес, кг - 9.1</p>
+          <p>Параметры питания сети, V - 380</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [30];
+echo $html [31];
+echo $html [32];
+echo $html [33];
+echo $html [34];
+echo $html [35];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 490 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up6">Оставить заказ</button>
+       </div>
+
+
+
+       <div class="pop_up" id="pop_up6">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>  
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                      
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close6">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   
+       
+    </div>
+ 
+    <h1 class="heading"> ИК обогреватели с излучающей панелью (черная панель) </h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <img src="img/section/KIPH_P-_6_.png" alt="">
+          <h3>Инфракрасный обогреватель с излучающей панелью KIRH-E08P-12 (черная панель)</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 0,8</p>
+          <p>Вес, кг - 3.2</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [36];
+echo $html [37];
+echo $html [38];
+echo $html [39];
+echo $html [40];
+echo $html [41];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 190 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up7">Оставить заказ</button>
+       </div>
+
+
+
+       <div class="pop_up" id="pop_up7">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>   
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                     
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close7">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+       <div class="box">
+          <img src="img/section/KIPH_P-_6_.png" alt="">
+          <h3>Инфракрасный обогреватель с излучающей панелью KIRH-E10P-12 (черная панель)</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 1,0</p>
+          <p>Вес, кг - 3.8</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [42];
+echo $html [43];
+echo $html [44];
+echo $html [45];
+echo $html [46];
+echo $html [47];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 235 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up8">Оставить заказ</button>
+       </div>
+
+
+
+       <div class="pop_up" id="pop_up8">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>   
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                     
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close8">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+ 
+       <div class="box">
+          <img src="img/section/KIPH_P-_6_.png" alt="">
+          <h3>Инфракрасный обогреватель с излучающей панелью KIRH-E20P-12 (черная панель)</h3>
+          <p>Высота установки, м - 4,5</p>
+          <p>Макс. мощность, кВт - 2,0</p>
+          <p>Вес, кг - 7.4</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [48];
+echo $html [49];
+echo $html [50];
+echo $html [51];
+echo $html [52];
+echo $html [53];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 400 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up9">Оставить заказ</button>
+       </div>
+
+
+       <div class="pop_up" id="pop_up9">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>         
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>               
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close9">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+ 
+     
+ 
+ 
+      
+
+ 
+   
+       
+    </div>
+ 
+ 
+ 
+    <h1 class="heading">ИК с открытым излучателем (ТЭН)</h1>
+    <div class="box-container">
+ 
+       <div class="box">
+          <img src="img/section/13.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E10T-11</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 1,0</p>
+          <p>Вес, кг - 2.2</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [54];
+echo $html [55];
+echo $html [56];
+echo $html [57];
+echo $html [58];
+echo $html [59];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 135 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up10">Оставить заказ</button>
+       </div>
+
+
+       
+       <div class="pop_up" id="pop_up10">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>    
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                    
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close10">&#10006</div>
+             </div>
+         </div>
+       </div>
+ 
+       <div class="box">
+          <img src="img/section/13.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E15T-11</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 1,5</p>
+          <p>Вес, кг - 3.2</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [60];
+echo $html [61];
+echo $html [62];
+echo $html [63];
+echo $html [64];
+echo $html [65];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 155 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up11">Оставить заказ</button>
+       </div>
+
+
+
+       <div class="pop_up" id="pop_up11">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>    
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                    
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close11">&#10006</div>
+             </div>
+         </div>
+       </div>
+ 
+ 
+       <div class="box">
+          <img src="img/section/13.jpg" alt="">
+          <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E20T-11</h3>
+          <p>Высота установки, м - 3,5</p>
+          <p>Макс. мощность, кВт - 2,0</p>
+          <p>Вес, кг - 3.9</p>
+          <p>Параметры питания сети, V - 220</p>
+          <p>Степень защиты - IP20</p>
+          <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [66];
+echo $html [67];
+echo $html [68];
+echo $html [69];
+echo $html [70];
+echo $html [71];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 205 BYN</p>
+          <button type="submit" class="btn" id="open_pop_up12">Оставить заказ</button>
+       </div>
+
+
+       
+       <div class="pop_up" id="pop_up12">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>     
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                   
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close12">&#10006</div>
+             </div>
+         </div>
+       </div>
+ 
+
+
+
+       <div class="box">
+         <img src="img/section/13.jpg" alt="">
+         <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E30T-31</h3>
+         <p>Высота установки, м - 15,0</p>
+         <p>Макс. мощность, кВт - 3,0</p>
+         <p>Вес, кг - 5.5</p>
+         <p>Параметры питания сети, V - 380</p>
+         <p>Степень защиты - IP20</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [72];
+echo $html [73];
+echo $html [74];
+echo $html [75];
+echo $html [76];
+echo $html [77];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 320 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up13">Оставить заказ</button>
+      </div>
+
+
+      <div class="pop_up" id="pop_up13">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>    
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                    
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close13">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+      <div class="box">
+         <img src="img/section/13.jpg" alt="">
+         <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E45T-31</h3>
+         <p>Высота установки, м - 15,0</p>
+         <p>Макс. мощность, кВт - 4,5</p>
+         <p>Вес, кг - 7.5</p>
+         <p>Параметры питания сети, V - 380</p>
+         <p>Степень защиты - IP20</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [78];
+echo $html [79];
+echo $html [80];
+echo $html [81];
+echo $html [82];
+echo $html [83];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 450 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up14">Оставить заказ</button>
+      </div>
+
+
+      <div class="pop_up" id="pop_up14">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>       
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>                 
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close14">&#10006</div>
+             </div>
+         </div>
+       </div>
+
+      <div class="box">
+         <img src="img/section/13.jpg" alt="">
+         <h3>Инфракрасный обогреватель KALASHNIKOV KIRH-E60T-31</h3>
+         <p>Высота установки, м - 15,0</p>
+         <p>Макс. мощность, кВт - 6,0</p>
+         <p>Вес, кг - 9.9</p>
+         <p>Параметры питания сети, V - 380</p>
+         <p>Степень защиты - IP20</p>
+         <p class="price__line">Цена - <span >
+   <?php
+   foreach ($array as $arr){
+
+   foreach ($arr as $td) {
+     $html .=  $td;
+ }
+
+}
+
+echo $html [84];
+echo $html [85];
+echo $html [86];
+echo $html [87];
+echo $html [88];
+echo $html [89];
+
+   ?>
+</span> BYN</p>
+    <p class="line__price">Цена - 535 BYN</p>
+         <button type="submit" class="btn" id="open_pop_up15">Оставить заказ</button>
+      </div>
+   
+
+      <div class="pop_up" id="pop_up15">
+         <div class="pop_up_container">
+             <div class="pop_up_body" id="pop_up_body">
+                 <form class="telegram-form">
+                         <div class="pop__up__img">
+                             <img class="img__pop__up__att" src="img/таблички/Rectangle 4.jpg" alt="">
+                         </div>                 
+                         <input class="input__box" type="text" name="name" placeholder="Имя" autocomplete="off" pattern="^[а-яА-Я]*$" required title="Имя может содержать только кириллические символы" minlength="2" maxlength="30"/>       
+                         <input class="input__box" type="text" name="phone" placeholder="Телефон" autocomplete="off" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" title="Формат телефона должен быть +375(29)-(33)-(44)-(25) 0000000" />
+                         <button  type="submit" class="btn">Отправить</button>
+                 </form>
+                 <div class="pop_up_close" id="pop_up_close15">&#10006</div>
+             </div>
+         </div>
+       </div>
+ 
+ 
+ 
+ 
+       
+ 
+      
+       
+    </div>
+ 
+ 
+
+ 
+ </section>
+
+ <?php
+ include('footer.php');
+ ?>
+ <!-- Подключение скриптов---------------- -->
+ <script src="lib/jquery.js"></script>
+
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+ <script src="js/pop__up__ik.js"></script>
+
+ <script src="js/main.js"></script>
+ <script src="js/burger.js"></script>
+ 
+ 
+ </body>
+</html>
